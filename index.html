@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Cards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-left">
+            <span class="time">10:44</span>
+            <div class="status-icons">
+                <i class="fas fa-wifi"></i>
+                <div class="mobile-icon">M</div>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="status-right">
+            <span class="network">LTE+</span>
+            <div class="signal">
+                <div class="signal-bar"></div>
+                <div class="signal-bar"></div>
+                <div class="signal-bar"></div>
+                <div class="signal-bar"></div>
+            </div>
+            <span class="battery">43%</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="title">ID Cards</h1>
+        <div class="header-icons">
+            <div class="icon-btn">
+                <i class="fas fa-plus"></i>
+            </div>
+            <div class="icon-btn">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="icon-btn">
+                <i class="fas fa-cog"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Transit Pass Card -->
+    <div class="transit-card">
+        <!-- Top Green Section -->
+        <div class="card-top">
+            <div class="card-title">
+                <h2>Transit Pass 2025/2026</h2>
+            </div>
+            <div class="tcsa-logo">
+                <div class="logo-circle">
+                    <div class="logo-text">tcsa</div>
+                    <div class="logo-subtitle">TRANSIT CARD SERVICES ASSOCIATION</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Gray Section -->
+        <div class="card-middle">
+            <div class="card-info">
+                <div class="name">Abhishek Nakka</div>
+                <div class="expiration">
+                    <span class="label">Expiration</span>
+                    <span class="date">Sep 01, 2025</span>
+                </div>
+            </div>
+            <div class="card-photo">
+                <div class="photo-placeholder">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="photo-label">TRANSIT PASS</div>
+            </div>
+        </div>
+
+        <!-- Bottom Green Section -->
+        <div class="card-bottom">
+            <div class="id-logo">
+                <div class="id-circle">
+                    <span>iD</span>
+                </div>
+            </div>
+            <div class="current-time">
+                <span id="current-date"></span>
+                <span id="current-time"></span>
+            </div>
+            <!-- Silver Ball Animation -->
+            <div class="silver-ball"></div>
+        </div>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="fab">
+        <i class="fas fa-ellipsis-v"></i>
+    </div>
+
+    <!-- Bottom Navigation Indicator -->
+    <div class="nav-indicator"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

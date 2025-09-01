@@ -2,7 +2,7 @@
 function updateDateTime() {
     const now = new Date();
     
-    // Format date (e.g., "Aug 31, 2025")
+    // Format date (e.g., "Sep 01, 2025")
     const dateOptions = { 
         month: 'short', 
         day: '2-digit', 
@@ -10,7 +10,7 @@ function updateDateTime() {
     };
     const formattedDate = now.toLocaleDateString('en-US', dateOptions);
     
-    // Format time (e.g., "10:44:31")
+    // Format time (e.g., "15:03:22")
     const timeOptions = { 
         hour: '2-digit', 
         minute: '2-digit', 

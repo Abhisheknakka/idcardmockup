@@ -57,26 +57,7 @@ setInterval(updateDateTime, 1000);
 // Change ID colors every 2 seconds
 setInterval(changeIDColors, 2000);
 
-// Also update the status bar time
-function updateStatusBarTime() {
-    const now = new Date();
-    const timeOptions = { 
-        hour: '2-digit', 
-        minute: '2-digit',
-        hour12: false 
-    };
-    const formattedTime = now.toLocaleTimeString('en-US', timeOptions);
-    
-    // Update status bar time
-    const statusTime = document.querySelector('.status-bar .time');
-    if (statusTime) {
-        statusTime.textContent = formattedTime;
-    }
-}
 
-// Update status bar time every minute
-setInterval(updateStatusBarTime, 60000);
-updateStatusBarTime(); // Update immediately
 
 // Add some interactive effects
 document.addEventListener('DOMContentLoaded', function() {

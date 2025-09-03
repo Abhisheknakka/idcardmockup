@@ -190,9 +190,9 @@ body {
 
 .current-time {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
     color: #ffffff;
     font-size: 14px;
     text-align: center;
@@ -201,15 +201,15 @@ body {
 }
 
 .id-circle {
-    width: 80px;
-    height: 40px;
-    border-radius: 20px;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.5s ease;
     animation: colorChange 3s infinite;
 }

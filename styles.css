@@ -174,9 +174,8 @@ body {
     background-color: #4CAF50;
     padding: 28px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 40px;
     border-radius: 0 0 16px 16px;
     position: relative;
     overflow: hidden;
@@ -186,18 +185,31 @@ body {
 .id-logo {
     display: flex;
     align-items: center;
+    flex: 0 0 auto;
+}
+
+.current-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
 }
 
 .id-circle {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     transition: all 0.5s ease;
     animation: colorChange 3s infinite;
 }
@@ -210,15 +222,7 @@ body {
     100% { background-color: #9C27B0; }
 }
 
-.current-time {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    color: #ffffff;
-    font-size: 14px;
-    text-align: center;
-}
+
 
 
 

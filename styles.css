@@ -25,6 +25,11 @@ body {
     background-color: #ffffff;
 }
 
+.header-icons {
+    display: flex;
+    gap: 16px;
+}
+
 .title {
     font-size: 32px;
     font-weight: 700;

@@ -12,6 +12,151 @@ body {
     position: relative;
 }
 
+/* Browser Address Bar */
+.browser-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.browser-left {
+    display: flex;
+    gap: 12px;
+}
+
+.browser-left i {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.browser-url {
+    color: #495057;
+    font-weight: 500;
+    flex: 1;
+    text-align: center;
+    margin: 0 16px;
+    background-color: #e9ecef;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+.browser-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.browser-right i {
+    color: #6c757d;
+    font-size: 16px;
+}
+
+.tab-count {
+    background-color: #6c757d;
+    color: white;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 12px;
+    font-weight: 600;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 44px;
+}
+
+.status-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.time {
+    font-weight: 700;
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-icons i {
+    font-size: 12px;
+    color: #000;
+}
+
+.mobile-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.mobile-icon.small {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+}
+
+.mobile-dot {
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.status-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-right i {
+    color: #000;
+    font-size: 12px;
+}
+
+.signal {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+}
+
+.signal-bar {
+    width: 3px;
+    background-color: #000;
+    border-radius: 1px;
+}
+
+.signal-bar:nth-child(1) { height: 6px; }
+.signal-bar:nth-child(2) { height: 8px; }
+.signal-bar:nth-child(3) { height: 10px; }
+.signal-bar:nth-child(4) { height: 6px; }
+
+.battery {
+    font-size: 12px;
+}
+
 
 
 /* Header */
@@ -195,11 +340,11 @@ body {
 }
 
 @keyframes colorChange {
-    0% { background-color: #81C784; }
+    0% { background-color: #9C27B0; }
     25% { background-color: #FF9800; }
     50% { background-color: #E91E63; }
-    75% { background-color: #9C27B0; }
-    100% { background-color: #81C784; }
+    75% { background-color: #2196F3; }
+    100% { background-color: #9C27B0; }
 }
 
 .current-time {
@@ -226,30 +371,12 @@ body {
 @keyframes moveAroundCorners {
     0% {
         top: 10px;
-        left: 10px;
-        transform: scale(1);
-    }
-    25% {
-        top: 10px;
         right: 10px;
-        left: auto;
-        transform: scale(1.2);
-    }
-    50% {
-        bottom: 10px;
-        right: 10px;
-        top: auto;
         transform: scale(1);
-    }
-    75% {
-        bottom: 10px;
-        left: 10px;
-        right: auto;
-        transform: scale(1.2);
     }
     100% {
         top: 10px;
-        left: 10px;
+        right: 10px;
         transform: scale(1);
     }
 }

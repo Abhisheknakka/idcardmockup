@@ -64,6 +64,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
+    position: relative;
 }
 
 /* Card Top Section */
@@ -90,8 +91,8 @@ body {
 }
 
 .tcsa-image {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     object-fit: contain;
     border-radius: 50%;
     background-color: #ffffff;
@@ -112,12 +113,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: -15px;
 }
 
 .name {
     font-size: 20px;
     font-weight: 700;
     color: #000;
+    margin-top: -8px;
 }
 
 .expiration {
@@ -129,6 +132,7 @@ body {
 .label {
     font-size: 14px;
     color: #000;
+    font-weight: bold;
 }
 
 .date {
@@ -144,8 +148,8 @@ body {
 }
 
 .photo-container {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 8px;
     overflow: hidden;
     /* Square photo with rounded corners */
@@ -245,6 +249,53 @@ body {
 .fab i {
     font-size: 20px;
     color: #000;
+}
+
+/* Animated Transparent Ball */
+.orbiting-ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: orbit 8s linear infinite;
+    z-index: 10;
+}
+
+@keyframes orbit {
+    0% {
+        top: 10px;
+        left: 10px;
+        transform: translate(0, 0);
+    }
+    25% {
+        top: 10px;
+        right: 10px;
+        left: auto;
+        transform: translate(0, 0);
+    }
+    50% {
+        bottom: 10px;
+        right: 10px;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+    }
+    75% {
+        bottom: 10px;
+        left: 10px;
+        right: auto;
+        top: auto;
+        transform: translate(0, 0);
+    }
+    100% {
+        top: 10px;
+        left: 10px;
+        bottom: auto;
+        right: auto;
+        transform: translate(0, 0);
+    }
 }
 
 /* Navigation Indicator */

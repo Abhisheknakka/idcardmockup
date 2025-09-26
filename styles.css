@@ -182,7 +182,7 @@ body {
     align-items: center;
     border-radius: 0 0 16px 16px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     min-height: 90px;
 }
 
@@ -254,48 +254,102 @@ body {
 /* Animated Transparent Ball */
 .orbiting-ball {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+    width: 35px;
+    height: 35px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
     border-radius: 50%;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    animation: orbit 8s linear infinite;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+    animation: cornerOrbit 10s linear infinite;
     z-index: 10;
+    top: 0;
+    left: 0;
 }
 
-@keyframes orbit {
+@keyframes cornerOrbit {
     0% {
-        top: 10px;
-        left: 10px;
-        transform: translate(0, 0);
+        transform: translateX(-20px) translateY(-20px);
     }
     25% {
-        top: 10px;
-        right: 10px;
-        left: auto;
-        transform: translate(0, 0);
+        transform: translateX(420px) translateY(-20px);
     }
     50% {
-        bottom: 10px;
-        right: 10px;
-        top: auto;
-        left: auto;
-        transform: translate(0, 0);
+        transform: translateX(420px) translateY(70px);
     }
     75% {
-        bottom: 10px;
-        left: 10px;
-        right: auto;
-        top: auto;
-        transform: translate(0, 0);
+        transform: translateX(-20px) translateY(70px);
     }
     100% {
-        top: 10px;
-        left: 10px;
-        bottom: auto;
-        right: auto;
-        transform: translate(0, 0);
+        transform: translateX(-20px) translateY(-20px);
     }
+}
+
+/* Additional Green Block */
+.additional-green-block {
+    margin: 20px;
+    background-color: #4CAF50;
+    border-radius: 16px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: visible;
+}
+
+.block-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.block-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-icon i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.block-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.block-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.block-subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.block-right {
+    display: flex;
+    align-items: center;
+}
+
+.block-status {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 /* Navigation Indicator */
